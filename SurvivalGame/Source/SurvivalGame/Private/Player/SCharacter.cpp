@@ -208,7 +208,7 @@ ASUsableActor* ASCharacter::GetUsableInView()
 	const FVector TraceEnd = TraceStart + (Direction * MaxUseDistance);
 
 	FCollisionQueryParams TraceParams(TEXT("TraceUsableActor"), true, this);
-	TraceParams.bTraceAsyncScene = true;
+	//TraceParams.bTraceAsyncScene = true;
 	TraceParams.bReturnPhysicalMaterial = false;
 
 	/* Not tracing complex uses the rough collision instead making tiny objects easier to select. */

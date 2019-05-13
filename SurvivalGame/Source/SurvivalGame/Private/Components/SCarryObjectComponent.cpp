@@ -96,7 +96,7 @@ AActor* USCarryObjectComponent::GetActorInView()
 	const FVector TraceEnd = TraceStart + (Direction * MaxPickupDistance);
 
 	FCollisionQueryParams TraceParams(TEXT("TraceActor"), true, PawnOwner);
-	TraceParams.bTraceAsyncScene = true;
+	//TraceParams.bTraceAsyncScene = true;
 	TraceParams.bReturnPhysicalMaterial = false;
 	TraceParams.bTraceComplex = false;
 
